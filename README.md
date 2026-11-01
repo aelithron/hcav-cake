@@ -1,0 +1,2 @@
+# hcav-cake ![IMG](https://hackatime-badge.hackclub.com/U08RJ1PEM7X/hcav-cake)
+a silly little project with an interactive 10-layer cake! this was created for the [hcav scavenger hunt](https://hcav.hackclub.community) (run by the hack club community), specifically #94: "A cake, consisting of exactly 30% AI usage. [30 clanker points]".
