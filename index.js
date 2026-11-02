@@ -10,17 +10,6 @@ function humanGradient() {
   }
 }
 
-let neverPlaying = false;
-function never() {
-  if (neverPlaying) return;
-  neverPlaying = true;
-  setTimeout(() => {
-    neverPlaying = false;
-  }, 7000);
-  new Audio("assets/never.mp3").play();
-}
-
-document.getElementById("human-gradient").addEventListener("click", humanGradient);
 let aiGradientToggle = false;
 function aiGradient() {
   const gradient = document.getElementById("ai-gradient");
@@ -33,5 +22,16 @@ function aiGradient() {
   }
 }
 
+let neverPlaying = false;
+function never() {
+  if (neverPlaying) return;
+  neverPlaying = true;
+  setTimeout(() => {
+    neverPlaying = false;
+  }, 7000);
+  new Audio("assets/never.mp3").play();
+}
+
+document.getElementById("human-gradient").addEventListener("click", humanGradient);
 document.getElementById("ai-gradient").addEventListener("click", aiGradient);
 document.getElementById("never").addEventListener("click", never);
