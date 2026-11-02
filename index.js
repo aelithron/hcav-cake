@@ -21,4 +21,17 @@ function never() {
 }
 
 document.getElementById("human-gradient").addEventListener("click", humanGradient);
+let aiGradientToggle = false;
+function aiGradient() {
+  const gradient = document.getElementById("ai-gradient");
+  if (aiGradientToggle) {
+    gradient.classList.replace("bg-gradient-to-l", "bg-gradient-to-r");
+    aiGradientToggle = false;
+  } else {
+    gradient.classList.replace("bg-gradient-to-r", "bg-gradient-to-l");
+    aiGradientToggle = true;
+  }
+}
+
+document.getElementById("ai-gradient").addEventListener("click", aiGradient);
 document.getElementById("never").addEventListener("click", never);
