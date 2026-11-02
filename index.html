@@ -5,7 +5,7 @@
   <title>HCAV Cake :3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="index.js"></script>
+  <script src="index.js" defer></script>
 </head>
 
 <body class="flex flex-col min-h-screen p-8 md:p-20 text-center">
@@ -42,23 +42,21 @@
 
     <p>(AI placeholder 1):</p>
     <div class="border-t-2 border-x-2 border-black h-15 w-150 col-span-3">
-
+      <p class="flex justify-end z-5">🤖</p>
     </div>
 
     <p>(AI placeholder 2):</p>
     <div class="border-t-2 border-x-2 border-black h-15 w-150 col-span-3">
-
+      <p class="flex justify-end z-5">🤖</p>
     </div>
 
     <p>(AI placeholder 3):</p>
     <div class="border-t-2 border-x-2 border-black h-15 w-150 col-span-3">
-
+      <p class="flex justify-end z-5">🤖</p>
     </div>
 
     <p>Human-made Gradient:</p>
-    <div class="border-t-2 border-x-2 border-black h-15 w-150 col-span-3">
-
-    </div>
+    <div id="human-gradient" class="border-t-2 border-x-2 border-black h-15 w-150 col-span-3 bg-gradient-to-r from-pink-300 to-rose-300"></div>
 
     <p>idk yet:</p>
     <div class="border-t-2 border-x-2 border-black h-15 w-150 col-span-3">
@@ -66,11 +64,12 @@
     </div>
 
     <p>never?</p>
-    <div class="border-2 border-black h-15 w-150 col-span-3">
+    <div id="never" class="border-2 border-black h-15 w-150 col-span-3">
       <img src="assets/never.webp" alt="never?" class="object-center object-cover h-14 w-150" height="14" width="150">
     </div>
     <p></p>
   </div>
+  <div id="never-playfield"></div>
 </body>
 
 </html>
