@@ -10,15 +10,14 @@ function humanGradient() {
   }
 }
 
+let neverPlaying = false;
 function never() {
-  const play = document.createElement("iframe");
-  play.src = "https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?si=uNPY1XsvgaKAyoZf&controls=0&autoplay=1&mute=1";
-  play.width = 560;
-  play.height = 315;
-  play.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
-  play.referrerpolicy = "strict-origin-when-cross-origin";
-  play.allowfullscreen = true;
-  document.getElementById("never-playfield").appendChild(play);
+  if (neverPlaying) return;
+  neverPlaying = true;
+  setTimeout(() => {
+    neverPlaying = false;
+  }, 7000);
+  new Audio("assets/never.mp3").play();
 }
 
 document.getElementById("human-gradient").addEventListener("click", humanGradient);
