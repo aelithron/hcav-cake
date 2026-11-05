@@ -2,7 +2,7 @@
 a silly little project with an interactive 10-layer cake! this was created for the [hcav scavenger hunt](https://hcav.hackclub.community) (run by the hack club community), specifically #94: "A cake, consisting of exactly 30% AI usage. [30 clanker points]".
 
 ## how to use
-just open it in a browser! the site is fairly static as of now, but it has some key things:
+just [open it](https://aelithron.github.io/hcav-cake) in a browser! the site is fairly static as of now, but it has some key things:
 - the flames on the candles flicker/pulse
 - click on the gradients to turn them around
 - click on "never" for a special surprise
